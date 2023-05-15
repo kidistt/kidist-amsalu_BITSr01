@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>contact me</title>
+    <link rel="stylesheet" href="stylef.css">
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <!-- <div> -->
+                <!-- <a href="homepage.html"> home</a> -->
+            <!-- </div> -->
+            <nav>
+                <ul id ='menuItems'>
+                    <li><a href="homepage.html">home</a></li>
+                    <li><a href="about.html">about me</a></li>
+                    <li><a href="hobby.html">hobby</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="contact.html">contact me</a></li>
+                    
+
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+   
+    
+    <div id="overlay">
+        <form onsubmit="event.preventDefault(); validateForm()"> 
+            <h1>Contact me</h1>
+
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="your name">
+            <small class="error"></small>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="your email">
+            <small class="error"></small>
+
+            <label for="message">Message:</label>
+            <textarea  id="message" placeholder="your message" row="6"></textarea>
+            <small class="error"></small>
+
+            <div class="center">
+                <input type="submit" value="send message">
+                <p id="success"></p>
+            </div>
+
+        </form>
+    </div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
